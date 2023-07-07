@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
     theme: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        figtree: ["Figtree", "Noto Sans JP", "Noto Sans", "sans-serif"]
+      },
     extend: {
       animation: {
         changeColor: 'changeColor 2s ease-in-out infinite',
@@ -12,29 +16,24 @@ export default {
       keyframes: {            
         changeColor: {
           '0%': {
-            color: '#ff8906',
+            color: 'hsl(var(--a))',
           },
-
-          '50%': {
-            color: '#e53170',
-
+          '33%': {
+            color: 'hsl(var(--s))',
+          },
+          '66%': {
+            color: 'hsl(var(--p))',
           },
           '100%': {
-            color: '#ff8906',
+            color: 'hsl(var(--a))',
           },
         }
       },
-      colors: {
-        'background': '#0f0e17',
-        'headline': '#fffffe',
-        'paragraph': '#a7a9be',
-        'button':'#ff8906',
-        'button-text':'#fffffe',
-        'second':'#f25f4c',
-        'third':'#e53170'
-      }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["cupcake"]
+  }
 }
 
