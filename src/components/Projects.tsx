@@ -11,7 +11,7 @@ export default function Projects() {
         {
             title: 'GrooveBuddy',
             description: 
-                `This is a fullstack application where the user can fetch songs from Spotify and add into their playlist.
+                `This is a fullstack application where the user can fetch songs from Spotify and add into their playlist, which is stored in MongoDB.
                 It was created with the idea of having a place where people can share their playlists, comment and vote on favorite songs.
                 It's still in construction, my plan is for it to be a social media centralized in music.
                `,
