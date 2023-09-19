@@ -1,49 +1,42 @@
 import React from 'react'
-import wassupImage from '../assets/wassupImage.png'
-import lynxEyesImage from '../assets/lynxEyesImage.png'
-import flavoraImage from '../assets/flavoraImage.png'
-import grooveBuddyImage from '../assets/grooveBuddyImage.png'
+import tableauImage from '../assets/tableauImage.png'
+import qlikImage from '../assets/qlikImage.png'
+import pbiImage from '../assets/pbiImage.png'
 import {motion as m} from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 
 export default function Projects() {
     const projects = [
         {
-            title: 'GrooveBuddy',
+            title: 'Weekly Demand Analysis',
             description: 
-                `This is a fullstack application where the user can fetch songs from Spotify and add into their playlist, which is stored in MongoDB.
-                It was created with the idea of having a place where people can share their playlists, comment and vote on favorite songs.
-                It's still in construction, my plan is for it to be a social media centralized in music.
+                `This visualization was created on Qlik Sense to show weekly demand variations of all customers.
+                It includes KPIs UNC (forecast), approved forecast (forecast without capacity or raw material constraints) and deltas. It focuses on the top and bottom five variations,
+                includes a delta by customer segment, a line graph to show the monthly delta and a mekko chart that focuses on the top three customers by demand volume, by month.
                `,
-            image: grooveBuddyImage,
-            techStack:'React, Typescript, MongoDB, NodeJS, ExpressJS, Passport, Tailwind, DaisyUI',
-            demoLink:'https://groove-buddy.netlify.app',
-            githubLink:'https://github.com/pauloruzanovsky/groove-buddy-client'
+            image: qlikImage,
+            demoLink: null,
+            techStack:'Extracted data from SAP to Excel, and uploaded Excel file on Qlik.',
+    
+        },
+       
+       
+        {
+            title: 'Airbnb Price Analysis',
+            description: `This visualization was created on Tableau to show how the prices vary between zipcodes and number of bedrooms.`,
+            image: tableauImage,
+            techStack:'Cleaned data on Excel and uploaded to Tableau.',
+            demoLink:'https://public.tableau.com/views/AirBnBFullProject_16934434118360/Dashboard1?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link',
+
+            
+            
         },
         {
-            title: 'Wassup',
-            description: 
-                "Final project on The Odin Project's curriculum. Here I attempted to replicate a website (Google Chat in this case) trying to implement as many features as I could. It was built with React, Typescript and Firebase technologies, specially Firestore and Auth. This was my first close contact with Firebase functionalities, learned to fetch data from the Firestore database, create and manipulate collections and it's respective documents.",
-            image: wassupImage,
-            techStack:'React, Typescript, Firebase',
-            demoLink:'https://wassup-4a627.firebaseapp.com/',
-            githubLink:'https://github.com/pauloruzanovsky/wassup'
-        },
-        {
-            title: 'Lynx Eyes',
-            description: 'Inspired by Where is Waldo, Lynx Eyes is a photo-tagging game in which you have to find the three characters in the least amount of time. It was built with React, Javascript and Firebase. I learned how to manage current mouse position via state, considering the height and width of the full image.',
-            image: lynxEyesImage,
-            techStack:'React, Javascript, Firebase',
-            demoLink:'https://whereiswaldo-3572e.web.app/',
-            githubLink:'https://github.com/pauloruzanovsky/where-is-waldo',            
-        },
-        {
-            title: 'Flavora',
-            description: `This website was created as part of the The Odin Project's Shopping Cart project, in which we had to create a simple shopping app with a item list and shopping cart functionality, while implementing at least two Route components.
-                            The food recipes and pictures were taken from Eating Well website.`,
-            image: flavoraImage,
-            techStack:'React, Javascript, Jest',
-            demoLink:'https://pauloruzanovsky.github.io/shopping-cart',
+            title: 'Data Professional Survey Breakdown',
+            description: `This Power BI visualization provides insights into the field of data-related jobs. It presents data on the countries with the highest number of professionals, average salaries by job title, preferred programming languages, perceived difficulty in entering data positions, and overall job satisfaction levels.`,
+            image: pbiImage,
+            techStack:'Cleaned data on Excel and uploaded to Power BI.',
+            demoLink:'',
             githubLink:'https://github.com/pauloruzanovsky/shopping-cart',
             
             
@@ -51,7 +44,7 @@ export default function Projects() {
     ]
 
     const openLink = (link) => {
-        window.open(link)
+        link && window.open(link)
     }
 
     const projectElements = projects.map((project) => {
@@ -68,8 +61,7 @@ export default function Projects() {
               <p>{project.description}</p>
               <p>Tech stack: {project.techStack}</p>
               <div className=" card-actions justify-end">
-              <a href={project.demoLink} target="_blank" className='hover:bg-base-300 p-2 cursor-pointer rounded-full' ><ExternalLink /></a>
-              <a href={project.githubLink} target="_blank" className=' hover:bg-base-300 p-2 cursor-pointer rounded-full'><Github /></a>
+              {project.demoLink && <a href={project.demoLink} target="_blank" className='hover:bg-base-300 p-2 cursor-pointer rounded-full' ><ExternalLink /></a> }
               </div>
             </div>
           </m.div>           

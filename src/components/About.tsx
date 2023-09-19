@@ -1,5 +1,5 @@
 import React from 'react'
-import myself from '../assets/myself.jpeg'
+import myself from '../assets/myself2.jpg'
 import {motion as m} from 'framer-motion'
 
 
@@ -33,7 +33,7 @@ export default function About() {
                             viewport={{once:true}}
                             transition={{opacity:{duration:1.5}, y:{duration:1.5}}}
                         >
-                            Hello, I'm Paulo Ruzanovsky! I'm a {myAge} years old brazilian guy and I am a self-taught developer. 
+                            I'm Paulo Ruzanovsky, a {myAge} years old brazilian guy who enjoys working with data and making processes run faster and with less resources.
                         </m.p>
                         
                         <m.p
@@ -42,8 +42,7 @@ export default function About() {
                             viewport={{once:true}}
                             transition={{opacity:{duration:1.5}, y:{duration:1.5}}}
                         className='mt-3'>
-                            I have always been fascinated by the power of technology and how it can help people solve problems, 
-                        and that is what led me to pursue a career in programming.</m.p> 
+                            I'm a production engineer with 5+ years of experience, specializing in data analysis. Proficient in SQL, Python, Excel, and BI tools, my focus is on leveraging data to optimize manufacturing processes, enhance product quality, and streamline supply chains.</m.p> 
                         
                         <m.p 
                             initial={{y:100, opacity:0}}
@@ -51,8 +50,7 @@ export default function About() {
                             viewport={{once:true}}
                             transition={{opacity:{duration:1.5}, y:{duration:1.5}}}
                         className='mt-3'>
-                            I graduated in 2021 with a degree in Production Engineering, which has given me a solid foundation 
-                        in the principles of resource management, logical thinking and process optimization. </m.p>
+                           My background enables me to reduce costs, drive efficiency, and improve operations. I thrive on turning complex data into actionable insights, fueling strategic growth and innovation. </m.p>
                         
                         <m.p
                             initial={{y:100, opacity:0}}
@@ -60,8 +58,7 @@ export default function About() {
                             viewport={{once:true}}
                             transition={{opacity:{duration:1.5}, y:{duration:1.5}}}
                         className='mt-3'>
-                            With my passion for programming and my engineering background, 
-                            I strive to develop innovative solutions that can make a positive impact on people's lives.</m.p>
+                            I'm dedicated to shaping a more efficient, data-driven manufacturing landscape, where my skills and passion for problem-solving are put to the test. My goal is to contribute to smarter, more profitable manufacturing operations through continuous improvement and analytics-driven decision-making.</m.p>
                     </section> 
                 </div>
             </div> 

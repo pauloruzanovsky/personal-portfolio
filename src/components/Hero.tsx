@@ -27,15 +27,9 @@ export default function Hero() {
                         <br></br>
                         <br></br>
                         Hello! I am <Link to='about' spy={true} smooth={true} offset={-100} duration={500} className='inline-block font-bold text-button cursor-pointer animate-changeColor transition-colors hover:text-primary-focus hover:animate-none no-underline' >Paulo Ruzanovsky</Link>,
-                    <div>a full-stack web developer.</div>
+                    <div>and I like to work with data.</div>
                     </m.h1>             
                     
-                    <m.div 
-                         initial={{y:100, opacity:0}}
-                         animate={{y:0, opacity:1}}
-                        transition={{y:{duration:1}, delay:0.25}}
-                    className='text-2xl font-light mt-9'>I enjoy building responsive websites and applications.
-                    </m.div>
                     <m.div className='text-2xl font-light'
                          initial={{y:100, opacity:0}}
                          animate={{y:0, opacity:1}}
