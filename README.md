@@ -17,7 +17,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Portfolio Screen Shot](https://github.com/pauloruzanovsky/personal-portfolio/blob/main/src/assets/portfolioImage.png?raw=true)](https://pauloruzanovsky.netlify.app/)
+[![Portfolio Screen Shot](https://imgur.com/HftDNkK)](https://pauloruzanovsky.netlify.app/)
 
 * Fully responsible between mobile and Full HD.
 * First interaction with TailwindCSS. It's strange at first but as you become more familiar with its syntax, it's easier to manage and faster to use than regular CSS.
