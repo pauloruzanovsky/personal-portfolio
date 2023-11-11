@@ -35,7 +35,7 @@ export default function Hero() {
                          animate={{y:0, opacity:1}}
                         transition={{y:{duration:1}, delay:0.5}}
                     >
-                        Check out my 
+                        With a passion for turning raw information into actionable insights, I invite you to explore my
                         <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Projects</Link> and 
                         <a href={resume} download className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Resume</a>.
                     </m.div>
@@ -45,7 +45,7 @@ export default function Hero() {
                          transition={{y:{duration:1}, delay:0.75}}
                     >
                         Get in touch with me through 
-                        <Link to='contact' spy={true} smooth={true} offset={-100} duration={500} className='text-secondary font-bold cursor-pointer hover:text-secondary-focus transition-colors'> Contact </Link>
+                        <a href="https://www.linkedin.com/in/pauloruzanovsky/" spy={true} smooth={true} offset={-100} duration={500} className='text-secondary font-bold cursor-pointer hover:text-secondary-focus transition-colors'> LinkedIn </a>
                         or shoot me an e-mail at <span className='font-bold cursor-pointer text-secondary' onClick={() => copyToClipboard('pauloruzanovsky@gmail.com')}>pauloruzanovsky@gmail.com</span>. 
                     </m.div>
                
