@@ -36,8 +36,9 @@ export default function Hero() {
                         transition={{y:{duration:1}, delay:0.5}}
                     >
                         With a passion for turning raw information into actionable insights, I invite you to explore my
-                        <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Projects</Link> and 
-                        <a href={resume} download className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Resume</a>.
+                        <Link to='projects' spy={true} smooth={true} offset={-100} duration={500} className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Projects</Link>, latest 
+                        <a href={'https://medium.com/@paulo_ruzanovsky/analyzing-netflixs-growing-movie-library-and-content-strategy-0918c2cce8de'} className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Medium</a> article
+                        and <a href={resume} download className='text-primary font-bold cursor-pointer hover:text-primary-focus transition-colors'> Resume</a>.
                     </m.div>
                     <m.div className='text-2xl font-light' 
                          initial={{y:100, opacity:0}}

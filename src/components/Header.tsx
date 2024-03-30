@@ -22,6 +22,7 @@ export default function Header() {
           <ul className="menu menu-horizontal px-1">
             <li><Link to='about' spy={true} smooth={true} offset={-200} duration={500}>About</Link></li>
             <li><Link to='projects'spy={true} smooth={true} offset={-100} duration={500}>Projects</Link></li>
+            <li><a href={'https://medium.com/@paulo_ruzanovsky/analyzing-netflixs-growing-movie-library-and-content-strategy-0918c2cce8de'}>Medium</a></li>
             <li><a href={resume} download>Resume</a></li>
             <li><Link to='contact'spy={true} smooth={true} offset={-100} duration={500}>Contact</Link></li>
           </ul>
